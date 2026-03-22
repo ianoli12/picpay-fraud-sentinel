@@ -5,7 +5,7 @@ real de dados — PySpark, Databricks e SQL.
 
 ## Problema de negócio
 
-O PicPay processa milhões de transações Pix por dia. Fraudes como 
+O Pagbank processa milhões de transações Pix por dia. Fraudes como 
 account takeover, golpe do comprovante falso e uso de contas laranja 
 geram prejuízo direto e afetam a confiança dos usuários.
 
