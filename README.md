@@ -68,6 +68,22 @@ Features criadas a partir dos padrões descobertos na EDA:
 > sintético (PaySim). Em produção com dados reais, AUC de 0.85~0.92 
 > seria o esperado para este tipo de modelo.
 
+## Integração com Amazon Redshift
+
+Pipeline completo PySpark → Redshift Serverless implementado:
+
+| Etapa | Detalhe |
+|---|---|
+| Conexão | JDBC via driver oficial Amazon Redshift |
+| Escrita | 61.709 transações escritas via PySpark |
+| Consultas | SQL analítico direto no Redshift |
+| Ambiente | Amazon Redshift Serverless (us-east-2) |
+
+Fluxo implementado:
+```
+PySpark (Colab) → JDBC → Redshift Serverless (AWS) → SQL Analítico
+```
+
 ## Como executar
 
 1. Baixe o dataset: kaggle.com/datasets/ealaxi/paysim1
